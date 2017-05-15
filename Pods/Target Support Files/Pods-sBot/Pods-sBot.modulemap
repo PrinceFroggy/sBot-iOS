@@ -1,0 +1,6 @@
+framework module Pods_sBot {
+  umbrella header "Pods-sBot-umbrella.h"
+
+  export *
+  module * { export * }
+}
