@@ -357,6 +357,10 @@ class Supreme
             
                 self.supremeInstance!.viewController!.supremeBrowser!.evaluateJavaScript("document.querySelector('.g-recaptcha').remove()", completionHandler: nil)
             
+            //fix for adding country/payment
+            
+            //webView.evaluateJavaScript("document.getElementById('order_billing_country').value = 'RU'; document.getElementById('order_billing_country').dispatchEvent(new Event('change'))", completionHandler: {(res, error) -> Void in})
+            
             let browserDelayQ = DispatchQueue(label: "browswerBackgroundQ7", qos: .userInitiated)
             
             browserDelayQ.asyncAfter(deadline: .now() + 2)
